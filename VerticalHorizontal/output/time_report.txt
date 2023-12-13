@@ -1,0 +1,49 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Codec
+Version: C-2009.06-SP5
+Date   : Thu Dec 27 09:46:41 2018
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: coder/data_in_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: decoder/data_in_reg_reg[17]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  coder/data_in_reg_reg[4]/CK (DFFHQX1)                   0.00       0.00 r
+  coder/data_in_reg_reg[4]/Q (DFFHQX1)                    0.25       0.25 r
+  coder/U8/Y (XOR2X1)                                     0.19       0.45 r
+  coder/U6/Y (XOR2X1)                                     0.17       0.62 r
+  coder/data_out[17] (Coder)                              0.00       0.62 r
+  U26/Y (XOR2X1)                                          0.12       0.73 f
+  decoder/data_in[17] (Decoder)                           0.00       0.73 f
+  decoder/data_in_reg_reg[17]/D (DFFHQX1)                 0.00       0.73 f
+  data arrival time                                                  0.73
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  decoder/data_in_reg_reg[17]/CK (DFFHQX1)                0.00      10.00 r
+  library setup time                                     -0.20       9.80
+  data required time                                                 9.80
+  --------------------------------------------------------------------------
+  data required time                                                 9.80
+  data arrival time                                                 -0.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.06
+
+
+1

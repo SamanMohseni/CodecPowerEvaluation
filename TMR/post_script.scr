@@ -1,0 +1,4 @@
+set base_path /home/icic/Desktop/PowerMeasure/TMR
+set activity_path $base_path/activity
+read_saif -input $activity_path/activity.saif -instance Test/uut
+report_power > $base_path/output/power_report.txt

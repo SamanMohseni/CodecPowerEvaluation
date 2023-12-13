@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : qor
+Design : Codec
+Version: C-2009.06-SP5
+Date   : Thu Dec 27 09:46:41 2018
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.73
+  Critical Path Slack:           9.06
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:         82
+  Leaf Cell Count:                155
+  Buf/Inv Cell Count:               3
+  CT Buf/Inv Cell Count:            0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     2734.300838
+  Noncombinational Area:  2128.896027
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              4863.196865
+  Design Area:            4863.196865
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           196
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ICICVM.lab.edu
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.00
+  Logic Optimization:            0.19
+  Mapping Optimization:          0.37
+  -----------------------------------
+  Overall Compile Time:          1.90
+
+1

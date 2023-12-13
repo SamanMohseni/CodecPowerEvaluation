@@ -1,0 +1,4 @@
+run 100ns
+vcd file /home/icic/Desktop/PowerMeasure/Hamming/activity/activity.vcd
+vcd add -r Test/uut/*
+run 10us

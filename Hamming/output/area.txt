@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : Codec
+Version: C-2009.06-SP5
+Date   : Thu Dec 27 11:17:14 2018
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/icic/Desktop/PowerMeasure/db/typical.db)
+
+Number of ports:               54
+Number of nets:                96
+Number of cells:               23
+Number of references:           3
+
+Combinational area:       3113.510441
+Noncombinational area:    1969.228825
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          5082.739265
+Total area:                 undefined
+1

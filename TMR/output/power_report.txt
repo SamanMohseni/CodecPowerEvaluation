@@ -1,0 +1,38 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: The derived toggle rate value (0.200000) for the clock net 'clk' conflicts with the annotated value (0.100000). Using the annotated value. (PWR-12)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Codec
+Version: C-2009.06-SP5
+Date   : Thu Dec 27 08:58:53 2018
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/icic/Desktop/PowerMeasure/db/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 340.3864 uW   (93%)
+  Net Switching Power  =  26.2497 uW    (7%)
+                         ---------
+Total Dynamic Power    = 366.6361 uW  (100%)
+
+Cell Leakage Power     =  34.3238 nW
+
+1

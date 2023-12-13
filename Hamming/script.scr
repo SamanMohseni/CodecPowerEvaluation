@@ -1,0 +1,36 @@
+set db_path /home/icic/Desktop/PowerMeasure/db
+set base_path /home/icic/Desktop/PowerMeasure/Hamming
+set source_path $base_path/source
+set output_path $base_path/output
+set my_files [list $source_path/Codec.v $source_path/Coder.v $source_path/Decoder.v]
+set my_toplevel Codec
+
+set my_clock_pin clk
+set my_clk_freq_MHz 100
+set my_input_delay_ns 0
+set my_output_delay_ns 0
+set link_library $db_path/typical.db
+set target_library $db_path/typical.db
+define_design_lib WORK -path $base_path/work
+analyze -f verilog $my_files
+elaborate $my_toplevel
+current_design $my_toplevel
+link
+uniquify
+set my_period [expr 1000 / $my_clk_freq_MHz]
+set find_clock [ find port [list $my_clock_pin] ]
+if { $find_clock != [list] } {
+ set clk_name $my_clock_pin
+ create_clock -period $my_period $clk_name
+} else {
+ set clk_name vclk
+ create_clock -period $my_period -name $clk_name
+}
+set_input_delay $my_input_delay_ns [all_inputs]
+set_output_delay $my_output_delay_ns [all_outputs]
+compile
+check_design
+report_timing > $output_path/time_report.txt
+report_area > $output_path/area.txt
+report_qor > $output_path/qor.txt
+write -f verilog -h -o $base_path/test/netlist.v
