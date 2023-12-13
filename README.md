@@ -1,6 +1,7 @@
 # Codec Power Evaluation
-Part of **Fault-Tolerant System Design** course.
-Verilog implemented of three different codec units and the evaluation of their power consumption using Design Compiler on TSMC 180nm technology.
+This project is part of **Fault-Tolerant System Design** course.
+
+Verilog implementation of three different codec units and the evaluation of their power consumption using Design Compiler on TSMC 180nm technology.
 
 ## Project Overview
 This project conducts a detailed analysis of the energy and power consumption for fault-tolerant coding using three different coding methods for a 16-bit register: Triple Modular Redundancy (TMR), Vertical Horizontal Overlapped Parity (VHOP), and Hamming Code. The goal is to code a 16-bit register using each method and provide insights into the power/energy consumption of each implementation. 
