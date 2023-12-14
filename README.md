@@ -1,5 +1,5 @@
 # Codec Power Evaluation
-This project is part of **Fault-Tolerant System Design** course.
+This project is part of the **Fault-Tolerant System Design** course.
 
 Verilog implementation of three different codec units and the evaluation of their power consumption using Design Compiler on TSMC 180nm technology.
 
