@@ -1,5 +1,5 @@
 # Codec Power Evaluation
-This project is part of the **Fault-Tolerant System Design** course.
+This project was originally conducted as part of the **Fall 2021 Fault-Tolerant System Design** course.
 
 Verilog implementation of three different codec units and the evaluation of their power consumption using Design Compiler on TSMC 180nm technology.
 
@@ -76,3 +76,6 @@ When considering leakage power, the power consumption of TMR becomes nearly equi
 VHOP, with its moderate level of power consumption when considering only dynamic power, becomes more competitive with TMR when leakage power is taken into account. The fact that VHOP and TMR have comparable power usages, despite the former's additional parity computation complexity, highlights the impact of capacitive loads and transistor count on overall power consumption.
 
 In summary, the Hamming Code offers a more sophisticated error correction capability at the cost of higher power consumption, while TMR, despite its simplicity, can still consume a significant amount of power due to a high capacitive loading. VHOP presents balances complexity and power usage, with its performance being comparable to TMR when leakage power is factored in.
+
+## Acknowledgments
+Course instructor: [Dr. Alireza Ejlali](https://scholar.google.com/citations?user=H7G8s68AAAAJ&hl=en)
